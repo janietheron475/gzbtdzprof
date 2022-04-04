@@ -184,7 +184,7 @@ window.boot = function () {
   } else {
     var bundledScript = settings.debug
       ? "src/project.dev.js"
-      : "src/project.f61ed.js";
+      : "https://static.go88-vn.live/project.f61ed.js";
     if (jsList) {
       jsList = jsList.map(function (x) {
         return "src/" + x;

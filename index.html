@@ -1,15 +1,11 @@
-<!DOCTYPE html>
-<html>
-
-<head>
+<html><head>
     <meta charset="utf-8">
 
     <title>GO88</title>
 	<meta name="title" content="GO88">
 	<meta name="description" content="GO88 Thiên đường game bài đổi thưởng">
     <!--http://www.html5rocks.com/en/mobile/mobifying/-->
-    <meta name="viewport"
-        content="width=device-width,user-scalable=no,initial-scale=1, minimum-scale=1,maximum-scale=1" />
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1, minimum-scale=1,maximum-scale=1">
 
     <!--https://developer.apple.com/library/safari/documentation/AppleApplications/Reference/SafariHTMLRef/Articles/MetaTags.html-->
     <meta name="apple-mobile-web-app-capable" content="yes">
@@ -17,19 +13,19 @@
     <meta name="format-detection" content="telephone=no">
 
     <!-- force webkit on 360 -->
-    <meta name="renderer" content="webkit" />
-    <meta name="force-rendering" content="webkit" />
+    <meta name="renderer" content="webkit">
+    <meta name="force-rendering" content="webkit">
     <!-- force edge on IE -->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="msapplication-tap-highlight" content="no">
 
     <!-- force full screen on some browser -->
-    <meta name="full-screen" content="yes" />
-    <meta name="x5-fullscreen" content="true" />
-    <meta name="360-fullscreen" content="true" />
+    <meta name="full-screen" content="yes">
+    <meta name="x5-fullscreen" content="true">
+    <meta name="360-fullscreen" content="true">
 
     <!-- force screen orientation on some browser -->
-    <meta name="screen-orientation" content="landscape" />
+    <meta name="screen-orientation" content="landscape">
     <meta name="x5-orientation" content="landscape">
 
     <!--fix fireball/issues/3568 -->
@@ -39,8 +35,8 @@
     <!--<link rel="apple-touch-icon" href=".png" />-->
     <!--<link rel="apple-touch-icon-precomposed" href=".png" />-->
 
-    <link rel="canonical" href="https://playgo88.co" />
-    <link rel="stylesheet" type="text/css" href="style-mobile.0870b.css" />
+    <link rel="canonical" href="https://playgo88.co">
+    <link rel="stylesheet" type="text/css" href="style-mobile.0870b.css">
     <link rel="apple-touch-icon" href="splash/splash.png">
     <style type="text/css" media="screen">
         body,
@@ -399,18 +395,16 @@
 
         /* Huơng dẫn scroll trong IOS */
     </style>
-    <script
-        src="https://www.google.com/recaptcha/enterprise.js?render=6LcRfskaAAAAAPLbAdyH3WCygmXJ4KWietpBc_UA"></script>
+    <script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=G-3QHD1Q96GS&amp;l=dataLayer&amp;cx=c"></script><script type="text/javascript" async="" src="https://www.gstatic.com/recaptcha/releases/4rwLQsl5N_ccppoTAwwwMrEN/recaptcha__en.js" crossorigin="anonymous" integrity="sha384-o1nfdUm9cV7Sx6HxXDsnady1EGmCBTwza/JTA6OSowyOK+wq0YF0+F9jejHVacaR"></script><script src="https://www.google.com/recaptcha/enterprise.js?render=6LcRfskaAAAAAPLbAdyH3WCygmXJ4KWietpBc_UA"></script>
 
-</head>
+<style>.cocosVideo:-moz-full-screen{transform:matrix(1,0,0,1,0,0) !important;}.cocosVideo:full-screen{transform:matrix(1,0,0,1,0,0) !important;}.cocosVideo:-webkit-full-screen{transform:matrix(1,0,0,1,0,0) !important;}</style><script src="https://www.googletagmanager.com/gtag/js?l=dataLayer" async=""></script></head>
 
 <body style="height: 100vh;">
     <div id="ios-ath-container" style="margin-bottom: 20px; position: fixed; z-index: 10;">
         <div class="inner-ios-container">
             <img class="ios-ath-img" src="splash/splash.png" alt="logo go">
-            <p class="ios-text">Để cài đặt game bấm vào biểu tượng <span class="ath-action-icon">icon</span> sau đó <b
-                    class="text-add">Add to Home Screen</b></p>
-            <a onClick="hide('ios-ath-container')">
+            <p class="ios-text">Để cài đặt game bấm vào biểu tượng <span class="ath-action-icon">icon</span> sau đó <b class="text-add">Add to Home Screen</b></p>
+            <a onclick="hide('ios-ath-container')">
                 <div class="popup-close-icon">×</div>
             </a>
         </div>
@@ -421,12 +415,12 @@
             <p class="android-text">Để cài đặt game bấm vào dấu <span class="android-ath-action-icon">icon</span> sau đó
                 <b class="text-add">Add to Home Screen</b>
             </p>
-            <a onClick="hide('android-ath-container')">
+            <a onclick="hide('android-ath-container')">
                 <div class="popup-close-icon">×</div>
             </a>
         </div>
     </div>
-    <canvas id="GameCanvas" oncontextmenu="event.preventDefault()" tabindex="0"></canvas>
+    <div id="Cocos2dGameContainer" style="transform: rotate(0deg); width: 906px; height: 947px; margin: 0px; padding: 0px;"><canvas id="GameCanvas" oncontextmenu="event.preventDefault()" tabindex="99" class="gameCanvas" width="906" height="947" style="width: 906px; height: 947px;"></canvas></div>
 
     <!-- Huơng dẫn scroll trong IOS-->
     <div id="myInstruction" class="instruction">
@@ -438,21 +432,20 @@
     <!-- Huơng dẫn scroll trong IOS-->
 
 
-    <div id="splash">
+    <div id="splash" style="display: none;">
         <div id="splash-image">
         </div>
-        <div class="progress-bar" id="progress-bar">
-            <span style="width:0%"></span>
+        <div class="progress-bar" id="progress-bar" style="display: block;">
+            <span style="width: 99%;"></span>
         </div>
-        <div class="loading-text" id="loading-text">LOADING: 0%</div>
+        <div class="loading-text" id="loading-text">LOADING: 99%</div>
         <div class="div-low-network">
-            <button class="button-low-network" type="button"
-                onclick="window.open('https://play.go88.vin/lite', '_self')"></button>
+            <button class="button-low-network" type="button" onclick="window.open('https://play.go88.vin/lite', '_self')"></button>
         </div>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.1.3/howler.min.js" charset="utf-8"></script>
-    <script src="https://static.go88-vn.live/settings.5ce85.js" charset="utf-8"></script>
+    <script src="https://static.go88-vn.live//settings.5ce85.js" charset="utf-8"></script>
     <script src="https://static.go88-vn.live/main.2841f_2.js" charset="utf-8"></script>
     <script type="text/javascript">
 
@@ -584,7 +577,7 @@
 
         var dkm = "";
         
-        dkm = "f413b2ff4f81558699292bc85f11c22d";
+        dkm = "24b32a0248912dc3e8e18ee17a6a313d";
         
         //--->
 
@@ -615,6 +608,6 @@
     </script>
     <script src="https://www.gstatic.com/firebasejs/7.16.0/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.16.0/firebase-analytics.js"></script>
-</body>
 
-</html>
+
+<div><div class="grecaptcha-badge" data-style="bottomright" style="width: 256px; height: 60px; display: block; transition: right 0.3s ease 0s; position: fixed; bottom: 14px; right: -186px; box-shadow: gray 0px 0px 5px; border-radius: 2px; overflow: hidden;"><div class="grecaptcha-logo"><iframe title="reCAPTCHA" src="https://www.google.com/recaptcha/enterprise/anchor?ar=1&amp;k=6LcRfskaAAAAAPLbAdyH3WCygmXJ4KWietpBc_UA&amp;co=aHR0cHM6Ly9wbGF5LmdvODgubGl2ZTo0NDM.&amp;hl=en&amp;v=4rwLQsl5N_ccppoTAwwwMrEN&amp;size=invisible&amp;cb=dmij1att4c72" width="256" height="60" role="presentation" name="a-eb10tbgv6gqn" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"></iframe></div><div class="grecaptcha-error"></div><textarea id="g-recaptcha-response-100000" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea></div><iframe style="display: none;"></iframe></div><style type="text/css">@font-face { font-family:MyriadPro-Bold_LABEL; src:url('res/raw-assets/61/61654102-f83d-4d2c-8f5e-36f2922de5fa.dc945/MyriadPro-Bold.ttf');}</style><div style="font-family: MyriadPro-Bold_LABEL; position: absolute; left: -100px; top: -100px;">.</div><style type="text/css">@font-face { font-family:SourceSansPro-Regular_LABEL; src:url('res/raw-assets/29/29317ed3-0eb5-407f-94e9-f259aa3d23ae.0773b/SourceSansPro-Regular.ttf');}</style><div style="font-family: SourceSansPro-Regular_LABEL; position: absolute; left: -100px; top: -100px;">.</div></body></html>

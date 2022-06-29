@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+
+    <title>GO88</title>
+	<meta name="title" content="GO88">
+	<meta name="description" content="GO88 Thiên đường game bài đổi thưởng">
+    <!--http://www.html5rocks.com/en/mobile/mobifying/-->
+    <meta name="viewport"
+        content="width=device-width,user-scalable=no,initial-scale=1, minimum-scale=1,maximum-scale=1" />
+
+    <!--https://developer.apple.com/library/safari/documentation/AppleApplications/Reference/SafariHTMLRef/Articles/MetaTags.html-->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="format-detection" content="telephone=no">
+
+    <!-- force webkit on 360 -->
+    <meta name="renderer" content="webkit" />
+    <meta name="force-rendering" content="webkit" />
+    <!-- force edge on IE -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="msapplication-tap-highlight" content="no">
+
+    <!-- force full screen on some browser -->
+    <meta name="full-screen" content="yes" />
+    <meta name="x5-fullscreen" content="true" />
+    <meta name="360-fullscreen" content="true" />
+
+    <!-- force screen orientation on some browser -->
+    <meta name="screen-orientation" content="landscape" />
+    <meta name="x5-orientation" content="landscape">
+
+    <!--fix fireball/issues/3568 -->
+    <!--<meta name="browsermode" content="application">-->
+    <meta name="x5-page-mode" content="app">
+
+    <!--<link rel="apple-touch-icon" href=".png" />-->
+    <!--<link rel="apple-touch-icon-precomposed" href=".png" />-->
+
+    <link rel="canonical" href="https://playgo88.co" />
+    <link rel="stylesheet" type="text/css" href="style-mobile.0870b.css" />
+    <link rel="apple-touch-icon" href="splash/splash.png">
+    <style type="text/css" media="screen">
+        body,
+        html {
+            height: 100% !important;
+            font-size: 100%;
+            -webkit-text-size-adjust: none;
+            background-color: #000;
+            margin: 0;
+            -webkit-overflow-scrolling: auto;
+            transform: rotate(0deg);
+        }
+
+        #ios-ath-container {
+            display: none;
+        }
+
+        #android-ath-container {
+            display: none;
+        }
+
+        .grecaptcha-badge {
+            visibility: hidden;
+        }
+
+        .ios-text {
+            line-height: 1.5;
+            margin-top: 0px;
+            padding: 0 12px;
+        }
+
+        .ath-action-icon {
+            width: 1.2em;
+            height: 1.5em;
+            background-image: url("splash/addtohome.png");
+            margin-top: -0.3em;
+            background-size: auto 100%;
+            background-repeat: no-repeat;
+            text-indent: -9999em;
+            display: inline-block;
+        }
+
+        @media only screen and (max-width: 499px) {
+            #ios-ath-container {
+                position: fixed;
+                left: 0;
+                right: 0;
+                margin: auto;
+                width: 85%;
+                max-width: 310px;
+                height: 70px;
+                padding: 10px;
+                background-color: #ffffff;
+                border: 2px solid #00234C;
+                -webkit-border-radius: 5px;
+                z-index: 1;
+                text-align: justify;
+                animation: toptobottom 2s normal ease-out;
+                bottom: 1px;
+            }
+
+            #ios-ath-container::after {
+                position: absolute;
+                content: '';
+                height: 0px;
+                width: 0px;
+                left: 43%;
+                bottom: -20px;
+                border-left: 20px solid transparent;
+                border-right: 20px solid transparent;
+                border-top: 20px solid #FFFFFF;
+                z-index: 9999;
+            }
+
+            #ios-ath-container .inner-ios-container {
+                display: flex;
+                flex-direction: row;
+                width: 100%;
+                justify-content: space-between;
+            }
+
+            #ios-ath-container .popup-close-icon {
+                position: absolute;
+                width: 0px;
+                right: 20px;
+                top: 0px;
+                font-size: 24px;
+                font-weight: bolder;
+                color: black;
+                text-shadow: 0px -1px 1px #00234C;
+                cursor: pointer;
+            }
+
+            img.ios-ath-img {
+                height: 70px;
+            }
+
+            @keyframes toptobottom {
+                0% {
+                    bottom: 90%;
+                }
+
+                100% {
+                    top: 1px;
+                }
+            }
+        }
+
+        @media only screen and (min-width: 500px) {
+            #ios-ath-container::after {
+                position: absolute;
+                content: '';
+                height: 0px;
+                width: 0px;
+                left: 86%;
+                bottom: 90px;
+                border-left: 20px solid transparent;
+                border-right: 20px solid transparent;
+                border-top: 20px solid #FFFFFF;
+                z-index: 9999;
+                transform: rotate(180deg);
+            }
+
+            #ios-ath-container {
+                position: fixed;
+                left: 0;
+                right: 0;
+                margin: auto;
+                width: 85%;
+                max-width: 310px;
+                height: 70px;
+                padding: 10px;
+                background-color: #ffffff;
+                border: 2px solid #00234C;
+                -webkit-border-radius: 5px;
+                z-index: 1;
+                text-align: justify;
+                animation: bottomtotop 2s normal ease-out;
+                top: 20px;
+                margin-right: 90px;
+                margin-bottom: 1px !important;
+            }
+
+            #ios-ath-container.ipad-device {
+                margin-right: 115px;
+            }
+
+            #ios-ath-container .inner-ios-container {
+                display: flex;
+                flex-direction: row;
+                width: 100%;
+                justify-content: space-between;
+            }
+
+            #ios-ath-container .popup-close-icon {
+                position: absolute;
+                width: 0px;
+                right: 20px;
+                top: 0px;
+                font-size: 24px;
+                font-weight: bolder;
+                color: black;
+                text-shadow: 0px -1px 1px #00234C;
+                cursor: pointer;
+            }
+
+            img.ios-ath-img {
+                height: 70px;
+            }
+
+            @keyframes bottomtotop {
+                0% {
+                    top: 90%;
+                }
+
+                100% {
+                    top: 20px;
+                }
+            }
+
+        }
+
+        #android-ath-container::after {
+            position: absolute;
+            content: '';
+            height: 0px;
+            width: 0px;
+            left: 86%;
+            bottom: 90px;
+            border-left: 20px solid transparent;
+            border-right: 20px solid transparent;
+            border-top: 20px solid #FFFFFF;
+            z-index: 9999;
+            transform: rotate(180deg);
+        }
+
+        #android-ath-container {
+            margin-bottom: 1px !important;
+        }
+
+        #android-ath-container {
+            position: fixed;
+            right: 3px;
+            margin: auto;
+            width: 85%;
+            max-width: 310px;
+            height: 70px;
+            padding: 10px;
+            background-color: #ffffff;
+            border: 2px solid #00234C;
+            -webkit-border-radius: 5px;
+            z-index: 1;
+            text-align: justify;
+            animation: bottomtotop-android 2s normal ease-out;
+            top: 20px;
+        }
+
+        #android-ath-container .inner-android-container {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            justify-content: space-between;
+        }
+
+        #android-ath-container .popup-close-icon {
+            position: absolute;
+            width: 0px;
+            right: 20px;
+            top: 0px;
+            font-size: 24px;
+            font-weight: bolder;
+            color: black;
+            text-shadow: 0px -1px 1px #00234C;
+            cursor: pointer;
+        }
+
+        .android-text {
+            line-height: 1.5;
+            margin-top: 0px;
+            padding: 0 15px;
+        }
+
+        img.android-ath-img {
+            height: 70px;
+        }
+
+        .android-ath-action-icon {
+            width: 1.2em;
+            height: 1.5em;
+            background-image: url("splash/3dots.jpg");
+            margin-top: -0.3em;
+            background-size: auto 100%;
+            background-repeat: no-repeat;
+            text-indent: -9999em;
+            display: inline-block;
+        }
+
+        @keyframes bottomtotop-android {
+            0% {
+                top: 90%;
+            }
+
+            100% {
+                top: 20px;
+            }
+        }
+
+        #top {
+            position: fixed;
+            bottom: 70px;
+            right: 30px;
+            z-index: 99;
+            font-size: 18px;
+            border: none;
+            outline: none;
+            background-color: red;
+            color: white;
+            cursor: pointer;
+            padding: 15px;
+            border-radius: 4px;
+            transform: rotate(90deg);
+        }
+
+        #bottom {
+            position: fixed;
+            bottom: 20px;
+            right: -10px;
+            z-index: 99;
+            font-size: 18px;
+            border: none;
+            outline: none;
+            background-color: red;
+            color: white;
+            cursor: pointer;
+            padding: 15px;
+            border-radius: 4px;
+            transform: rotate(90deg);
+        }
+
+
+        /* Huơng dẫn scroll trong IOS */
+        .instruction {
+            display: none;
+            position: absolute;
+            z-index: 9999;
+            height: 120vh;
+            width: 100%;
+            padding-top: 10vh;
+            background: rgba(0, 0, 0, 0.5);
+        }
+
+        .instruction-content {
+            margin: auto;
+            max-width: 500px;
+            position: relative;
+            padding: 10px;
+        }
+
+        .close {
+            color: #aaaaaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+            position: absolute;
+            right: 20px;
+            width: 40px;
+            height: 40px;
+            top: 10px;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: #000;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .img-sroll {
+            max-width: 100%;
+        }
+
+        body,
+        html {
+            height: 100% !important;
+            font-size: 100%;
+            -webkit-text-size-adjust: none;
+            background-color: #000;
+            margin: 0;
+            -webkit-overflow-scrolling: auto;
+        }
+
+        .img-sroll {
+            max-width: 100%;
+            pointer-events: none;
+        }
+
+        /* Huơng dẫn scroll trong IOS */
+    </style>
+    <script
+        src="https://www.google.com/recaptcha/enterprise.js?render=6LcRfskaAAAAAPLbAdyH3WCygmXJ4KWietpBc_UA"></script>
+
+</head>
+
+<body style="height: 100vh;">
+    <div id="ios-ath-container" style="margin-bottom: 20px; position: fixed; z-index: 10;">
+        <div class="inner-ios-container">
+            <img class="ios-ath-img" src="splash/splash.png" alt="logo go">
+            <p class="ios-text">Để cài đặt game bấm vào biểu tượng <span class="ath-action-icon">icon</span> sau đó <b
+                    class="text-add">Add to Home Screen</b></p>
+            <a onClick="hide('ios-ath-container')">
+                <div class="popup-close-icon">×</div>
+            </a>
+        </div>
+    </div>
+    <div id="android-ath-container" style="margin-bottom: 20px; position: fixed; z-index: 10;">
+        <div class="inner-android-container">
+            <img class="android-ath-img" src="splash/splash.png" alt="logo">
+            <p class="android-text">Để cài đặt game bấm vào dấu <span class="android-ath-action-icon">icon</span> sau đó
+                <b class="text-add">Add to Home Screen</b>
+            </p>
+            <a onClick="hide('android-ath-container')">
+                <div class="popup-close-icon">×</div>
+            </a>
+        </div>
+    </div>
+    <canvas id="GameCanvas" oncontextmenu="event.preventDefault()" tabindex="0"></canvas>
+
+    <!-- Huơng dẫn scroll trong IOS-->
+    <div id="myInstruction" class="instruction">
+        <div class="instruction-content">
+            <span class="close"></span>
+            <img class="img-sroll" src="splash/vuot.gif">
+        </div>
+    </div>
+    <!-- Huơng dẫn scroll trong IOS-->
+
+
+    <div id="splash">
+        <div id="splash-image">
+        </div>
+        <div class="progress-bar" id="progress-bar">
+            <span style="width:0%"></span>
+        </div>
+        <div class="loading-text" id="loading-text">LOADING: 0%</div>
+        <div class="div-low-network">
+            <button class="button-low-network" type="button"
+                onclick="window.open('https://play.go88.vin/lite', '_self')"></button>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.1.3/howler.min.js" charset="utf-8"></script>
+    <script src="https://static.go88-vn.live/settings.5ce85.js" charset="utf-8"></script>
+    <script src="https://static.go88-vn.live/main.2841f_2.js" charset="utf-8"></script>
+    <script type="text/javascript">
+
+        //if(/Chrome/i.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor))
+        /*
+        if(navigator.vendor.match(/google/i)) {
+            //browserName = 'chrome/blink';
+            document.getElementById("ios-ath-container").style.display = "none";
+        }
+        else if(navigator.vendor.match(/apple/i)) {
+            //browserName = 'safari/webkit';
+            document.getElementById("ios-ath-container").style.display = "block";
+        }
+        else if(navigator.userAgent.match(/firefox\//i)) {
+            //browserName = 'firefox/gecko';
+            document.getElementById("ios-ath-container").style.display = "none";
+        }
+        else if(navigator.userAgent.match(/edge\//i)) {
+            //browserName = 'edge/edgehtml';
+            document.getElementById("ios-ath-container").style.display = "none";
+        }
+        else if(navigator.userAgent.match(/trident\//i)) {
+            //browserName = 'ie/trident';
+            document.getElementById("ios-ath-container").style.display = "none";
+        }*/
+
+        function setCookie(cname, cvalue, exdays) {
+            var d = new Date();
+            d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+            var expires = "expires=" + d.toUTCString();
+            document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+        }
+
+        function getCookie(cname) {
+            var name = cname + "=";
+            var ca = document.cookie.split(';');
+            for (var i = 0; i < ca.length; i++) {
+                var c = ca[i];
+                while (c.charAt(0) == ' ') {
+                    c = c.substring(1);
+                }
+                if (c.indexOf(name) == 0) {
+                    return c.substring(name.length, c.length);
+                }
+            }
+            return "";
+        }
+
+        function hide(obj) {
+            var el = document.getElementById(obj);
+            el.style.display = 'none';
+            setCookie("isShowPWA", Date.now(), 1);
+        }
+
+        const isInStandaloneMode = () =>
+            (window.matchMedia('(display-mode: standalone)').matches) || (window.navigator.standalone) || document.referrer.includes('android-app://');
+
+
+        var userAgent = window.navigator.userAgent;
+        if (navigator.userAgent.match('CriOS') || navigator.userAgent.match('FxiOS') || isInStandaloneMode() || getCookie("isShowPWA") != "") {
+            document.getElementById("android-ath-container").style.display = "none";
+            document.getElementById("ios-ath-container").style.display = "none";
+        }
+        else if (userAgent.match(/iPad/i)) {
+            document.getElementById("android-ath-container").style.display = "none";
+            document.getElementById("ios-ath-container").style.display = "block";
+            //setCookie("isShowPWA",Date.now(), 1);
+            if (userAgent.match(/iPad/i)) {
+                var cl = document.getElementById("ios-ath-container");
+                cl.classList.add("ipad-device");
+            }
+        }
+        else if (userAgent.match(/iPhone/i)) {
+            document.getElementById("android-ath-container").style.display = "none";
+            // document.getElementById("ios-ath-container").style.display = "block";
+            //setCookie("isShowPWA",Date.now(), 1);
+
+            if (userAgent.match(/iPad/i)) {
+                var cl = document.getElementById("ios-ath-container");
+                cl.classList.add("ipad-device");
+            }
+
+            //hướng dẫn full màn hình trên IOS
+            var instruction = document.getElementById("myInstruction");
+
+            function myFunction(x) {
+
+                if (x.matches) {
+                    instruction.style.display = "none";
+                } else {
+                    listenCallBack();
+                    window.addEventListener("resize", listenCallBack);
+                    window.onload = listenCallBack;
+                    function listenCallBack() {
+                        var instruction = document.getElementById('myInstruction');
+                        //if(Number(window.innerHeight) == Number(document.documentElement.clientHeight) || Number(window.innerHeight) > Number(document.documentElement.clientHeight))
+                        var inner = parseInt(window.innerHeight);
+                        var client = parseInt(document.documentElement.clientHeight);
+                        var addressbar = client - inner;
+                        if (inner == client || addressbar < 20) {
+                            instruction.style.display = "none";
+                        } else if (!x.matches) {
+                            instruction.style.display = "block";
+                        }
+                    }
+                }
+            }
+            var x = window.matchMedia("(max-width: 500px)")
+            myFunction(x)
+            x.addListener(myFunction)
+            //hướng dẫn full màn hình trên IOS
+
+        }
+        else if (userAgent.match(/Android/i)) {
+            document.getElementById("ios-ath-container").style.display = "none";
+            document.getElementById("android-ath-container").style.display = "block";
+            // setCookie("isShowPWA",Date.now(), 1);
+        }
+
+        // lấy ngôn ngữ và đổi text trình duyệt
+        var language = window.navigator.userLanguage || window.navigator.language;
+        if (language == "vi-VN") {
+            var text = document.getElementsByClassName('text-add');
+            var i;
+            for (i = 0; i < text.length; i++) {
+                text[i].innerHTML = 'Thêm vào màn hình chính';
+            }
+        }
+
+        var dkm = "";
+        
+        dkm = "f413b2ff4f81558699292bc85f11c22d";
+        
+        //--->
+
+        (function () {
+            var splash = document.getElementById('splash');
+            splash.style.display = 'block';
+
+            var cocos2d = document.createElement('script');
+            cocos2d.async = true;
+            cocos2d.src = window._CCSettings.debug ? 'cocos2d-js.js' : 'https://static.go88-vn.live/cocos2d-js-min.b909b.js';
+
+            var engineLoaded = function () {
+                // console.log("engineLoaded");
+                document.body.removeChild(cocos2d);
+                cocos2d.removeEventListener('load', engineLoaded, false);
+                window.boot();
+            };
+            cocos2d.addEventListener('load', engineLoaded, false);
+            document.body.appendChild(cocos2d);
+        })();
+
+        var canvas = document.getElementById('GameCanvas');
+        canvas.ontouchstart = function (e) {
+            if (e.touches) e = e.touches[0];
+            return false;
+        }
+
+    </script>
+    <script src="https://www.gstatic.com/firebasejs/7.16.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.16.0/firebase-analytics.js"></script>
+</body>
+
+</html>
